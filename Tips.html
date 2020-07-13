@@ -1,0 +1,123 @@
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/propio.css" rel="stylesheet" />
+    <link href="css/util.css" rel="stylesheet" />
+    <!-- TABLA -->
+    <!-- Custom styles for this page -->
+      <link href="datatables/dataTables.bootstrap4.css" rel="stylesheet" />
+    <!--  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+    <title></title>
+</head>
+<body>
+
+
+    <nav class="navbar navbar-light " style="padding-left: 45%; background-color: #3C793B;">
+        <a class="navbar-brand text-white p-1 pl-1 pr-2 text-capitalize text-center font-weight-bold align-content-center " href="#">
+            <h3>VeGreen
+            </h3>
+        </a>
+
+        <form class="form-inline ">
+          
+                <h5 class="mr-sm-2 text-white ">  <b>Cerrar Sesión </b></h5>
+            
+            <a href="Login.php">
+                <img src="img/log-out.png" width="30" height="30" alt="">
+            </a>
+        </form>
+    </nav>
+    <div class="mt-5 pr-5 pb-5 " style="width: 100%;">
+        <div class="row">
+            <div class="col-2">
+                <div class="list-group" style="width: 100%;">
+                    <a style="margin-bottom: 20px; padding-top: 10px; height: 10%; text-align: center; font-size: 23px; background-color: #3C793B;" href="Lista.html" class="list-group-item list-group-item-action text-white"><b>Dietas</b></a>
+                    <a style="margin-bottom: 20px; padding-top: 10px; height: 10%; text-align: center; font-size: 23px; background-color: #3C793B;" href="Listado_VIP.html" class="list-group-item list-group-item-action text-white"><b>Dieta VIP</b></a>
+                    <a style="margin-bottom: 20px; padding-top: 10px; height: 10%; text-align: center; font-size: 23px; background-color: #3C793B;" href="Usuarios_VIP.html" class="list-group-item list-group-item-action text-white"><b>Usuarios VIP</b></a>
+                </div>
+            </div>
+            <div class="col-10 border border-dark overflow-auto" style="padding-right: 0px; height:800px; padding-left: 0px; width: 100%;">
+                <div>
+                    <div class="col-12 " style="background-color: #28A745; padding: 0px;">
+
+                        <ul class="nav nav-pills mb-1 " id="myTaba" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link btn-success pl-4 pr-4 text-white" id="pills-corriente-tab" href="Dietas.html" aria-controls="pills-dieta" aria-selected="false">Dieta</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link  btn-success  active  text-white" id="pills-vista-tab" href="Tips.aspx" role="tab" aria-controls="pills-tips" aria-selected="true">Tips y Consejos</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <form action="#">
+                 
+                                   <div class="card shadow  ml-5 mt-3 mb-5" style="width:92%;">
+                            <div class="card-header bg-success py-3">
+                        
+                              <h6 class="m-0 font-weight-bold text-white ">Tips y consejos</h6>
+                                
+                            
+                            </div>
+                            <div class="card-body">
+                              <div class="table-responsive">
+                
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                  <thead>
+                                    <tr>
+                                      <th style="width:10%;">ID</th>
+                                      <th style="width:30%;">Nombre</th>
+                                      <th style="width:30%;">Fecha</th>
+                                      <th style="width:15%;"></th>
+                                      <th style="width:15%;"></th>
+                             
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <td>1</td>
+                                      <td>System Architect</td>
+                                      <td>Edinburgh</td>
+                                      <td> <a href="Dietas.html" class="btn btn-success w-100 h-100">Editar</a></td>
+                                      <td> <a href="Dietas.html" class="btn btn-success w-100 h-100">Eliminar</a> </td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                              </div>
+                            </div>
+                          </div>
+                
+                        <div class="row col-11 ml-5 mt-1 mb-3 pt-3 pb-3 pr-0 pl-3 border border-dark ">
+                            <div class="col-10" style="width: 95%;">
+                                <span class="h5">Nuevo Tip o Consejo:</span>
+                                <br>
+                                <textarea ID="tb5" Style="width: 95%; margin-top: 1%; height: 100px; min-height: 100px; max-height: 100px; max-width: 95%; min-width: 95%;" TextMode="multiline"> </textarea>
+                
+                            </div>
+                
+                            <div class="col-2" style="margin-top: 50px; padding-right: 0px; padding-left: 0px; width: 100%;">
+                                       <button class="btn btn-success mt-1" style="width: 80%; height: 40px; margin-right: 6%;">Guardar</button>
+                            </div>
+                
+                        </div>
+                
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!--   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/bootstrap-table@1.14.2/dist/bootstrap-table.min.js"></script>
+
+<script src="js/bootstrap.js"></script>
+<script src="jquery/jquery.min.js"></script>
+<script src="datatables/jquery.dataTables.min.js"></script>
+<script src="datatables/dataTables.bootstrap4.min.js"></script>
+<script src="js/datatables-demo.js"></script>
+
+</html>
