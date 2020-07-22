@@ -42,21 +42,21 @@ $result2 = mysqli_query($conexion, $eli);
 <body>
 
 
-  <nav class="navbar navbar-light " style="padding-left: 45%; background-color: #3C793B;">
-    <a class="navbar-brand text-white p-1 pl-1 pr-2 text-capitalize text-center font-weight-bold align-content-center " href="#">
-      <h3>VeGreen
-      </h3>
-    </a>
+<nav class="navbar navbar-light " style="padding-left: 45%; background-color: #3C793B;">
+        <a class="navbar-brand text-white p-1 pl-1 pr-2 text-capitalize text-center font-weight-bold align-content-center " href="#">
+            <h3>VeGreen
+            </h3>
+        </a>
 
-    <form>
-
-      <h5 class="mr-sm-2 text-white "> <b>Cerrar Sesión </b></h5>
-
-      <a href="Login.php">
-        <img src="img/log-out.png" width="30" height="30" alt="">
-      </a>
-    </form>
-  </nav>
+        <form class="form-inline ">
+          
+                <h5 class="mr-sm-2 text-white ">  <b>Cerrar Sesión </b></h5>
+            
+            <a href="Login.php">
+                <img src="img/log-out.png" width="30" height="30" alt="">
+            </a>
+        </form>
+    </nav>
   <div class="mt-5 pr-5 pb-5 " style="width: 100%;">
     <div class="row">
       <div class="col-2">

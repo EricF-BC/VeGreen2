@@ -13,3 +13,12 @@ function ConEliminar() {
 alert("Dieta Eliminada")
 
   }
+
+function ConGuardar(){
+    if(document.getElementById("tb5")==null){
+        alert("Debe ingresar un consejo")
+    }else{
+        alert("Consejo ingresado")
+    }
+
+}

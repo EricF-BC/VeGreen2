@@ -62,13 +62,14 @@ window.location = "Lista.php"
 }
 
 
+$string = "";
 
+echo preg_replace("/\xEF\xBB\xBF/", "", $string);
 
 ?>
 
+<!DOCTYPE html>
 
-
-<html>
 
 <head>
     
@@ -91,16 +92,16 @@ window.location = "Lista.php"
 </head>
 
 <body>
-    <nav class="navbar navbar-light " style="padding-left: 45%; padding-top: 0%; margin-top: 0%; background-color: #3C793B;">
+<nav class="navbar navbar-light " style="padding-left: 45%; background-color: #3C793B;">
         <a class="navbar-brand text-white p-1 pl-1 pr-2 text-capitalize text-center font-weight-bold align-content-center " href="#">
             <h3>VeGreen
             </h3>
         </a>
 
         <form class="form-inline ">
-
-            <h5 class="mr-sm-2 text-white "> <b>Cerrar Sesión </b></h5>
-
+          
+                <h5 class="mr-sm-2 text-white ">  <b>Cerrar Sesión </b></h5>
+            
             <a href="Login.php">
                 <img src="img/log-out.png" width="30" height="30" alt="">
             </a>
@@ -121,17 +122,18 @@ window.location = "Lista.php"
             <div class="col-10 border border-dark overflow-auto" style="padding-right: 0px; height:800px; padding-left: 0px; width: 100%;">
 
 
-                <div class="col-12 " style="background-color: #28A745; padding: 0px;">
+                <div class="col-12 " style="background-color: #3C793B; padding: 0px;">
 
-                    <ul class="nav nav-pills mb-1 " id="myTaba" role="tablist">
+                    <ul class="nav " >
                         <li class="nav-item">
-                            <a class="nav-link btn-success active pl-4 pr-4 text-white" id="pills-corriente-tab" href="Dietas.html" aria-controls="pills-dieta" aria-selected="true">Dieta</a>
+                            <a class="nav-link btn-success  pl-4 pr-4 text-white" id="pills-corriente-tab" href="Dietas.php" aria-controls="pills-dieta" aria-selected="true">Dieta</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link  btn-success  text-white" id="pills-vista-tab" href="Tips.aspx" role="tab" aria-controls="pills-tips" aria-selected="false">Tips y Consejos</a>
+                        <li class="nav">
+                            <a class="nav-link  btn-success  active text-white" href="Tips.php"  aria-selected="false">Tips y Consejos</a>
                         </li>
                     </ul>
                 </div>
+              
                 <div class="col-12 tab-pane fade show active p-1 mt-1 mr-5 ml-1 rounded rounded-2 ">
                     <form action="" method="post">
                         <div class="row col-12">

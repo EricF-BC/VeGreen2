@@ -85,7 +85,7 @@
                 <div class="count-box">
                   <i class="icofont-simple-smile"></i>
                   <span data-toggle="counter-up">1000</span>
-                  <p>Cleintes Felices</p>
+                  <p>Clientes Felices</p>
                 </div>
               </div>
 
@@ -355,7 +355,7 @@
         <div class="owl-carousel testimonials-carousel">
 
           <div class="testimonial-item">
-            <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
+            <img src="assets/img/testimonials/nutri.jpg" class="testimonial-img" alt="">
             <h3>Isidora Escobar</h3>
             <h4>Nutricionista &amp; Ayudante</h4>
             <p>
@@ -366,7 +366,7 @@
           </div>
 
           <div class="testimonial-item">
-            <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
+            <img src="assets/img/testimonials/cba.jpg" class="testimonial-img" alt="">
             <h3>Sebastian Rojas</h3>
             <h4>Programador y Diseñador</h4>
             <p>
@@ -377,7 +377,7 @@
           </div>
 
           <div class="testimonial-item">
-            <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
+            <img src="assets/img/testimonials/veg.jpg" class="testimonial-img" alt="">
             <h3>Sarah Garcia</h3>
             <h4>Vegano</h4>
             <p>
@@ -409,7 +409,7 @@
 
           <div class="col-lg-4 col-md-6">
             <div class="member" data-aos="fade-up" data-aos-delay="100">
-              <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets/img/team/ale.jpeg" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Alejandro Marín</h4>
                 <span>Scrum Master y Director</span>
@@ -425,7 +425,7 @@
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="member">
-              <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets/img/team/seba.PNG" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Sebastian Rojas</h4>
                 <span>Programador y Diseñador</span>
@@ -441,10 +441,10 @@
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="member">
-              <div class="pic"><img src="assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
+              <div class="pic"><img src="assets/img/team/saru.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
                 <h4>Eric Briones</h4>
-                <span>Programador Full Stack</span>
+                <span>Programador</span>
                 <div class="social">
                   <a href="https://www.facebook.com/fabian.brionescarmona"><i class="icofont-facebook"></i></a>
                   <a href="https://www.instagram.com/saru117/?hl=es-la"><i class="icofont-instagram"></i></a>
@@ -460,7 +460,7 @@
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up"">
+      <div class="container" data-aos="fade-up">
 
     <div class=" section-title">
         <h2>Contacto</h2>
@@ -498,7 +498,7 @@
         </div>
 
         <div class="col-lg-6 mt-4 mt-lg-0">
-          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+          <form action="forms/contact.php" method="post" role="form" class="php-email-form" onsubmit="return validar();">
             <div class="form-row">
               <div class="col-md-5 form-group">
                 <input type="text" name="name" class="form-control" id="name" placeholder="Tú Nombre" data-rule="minlen:4" data-msg="Escriba su Nombre Aquí" />
@@ -514,7 +514,7 @@
               <div class="validate"></div>
             </div>
             <div class="form-group">
-              <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Escriba Algo Aquí" placeholder="Escriba su Mensaje"></textarea>
+              <textarea class="form-control" name="message" id="message" rows="5" data-rule="required" data-msg="Escriba Algo Aquí" placeholder="Escriba su Mensaje"></textarea>
               <div class="validate"></div>
             </div>
             <div class="mb-3">
@@ -574,6 +574,35 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script type="text/javascript">
+
+    function validar() {
+    
+    var nom, corr, asu, msj;
+    
+    nom = document.getElementById("name").value;
+    corr = document.getElementById("email").value;
+    asu = document.getElementById("subject").value;
+    msj = document.getElementById("message").value;
+    
+    
+    if(nom === "" || corr === "" || asu === "" || msj === "") {
+        alert ("Rellene los campos solicitados")
+        return false;
+    }else{
+        alert ("[ ✓ ] Formulario Enviado Correctamente, Te Contactaremos en Breve!")
+        return true;
+    }
+    
+    }
+    
+    
+    
+    </script>
+    
+
+
 
 </body>
 

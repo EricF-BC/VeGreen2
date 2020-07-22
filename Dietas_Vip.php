@@ -112,9 +112,9 @@ window.location = "UserVIP.php"
             </div>
             <div class="col-10 border border-dark overflow-auto" style="padding-right: 0px; height:800px; padding-left: 0px; width: 100%;">
                 <div>
-                    <div class="col-12 " style="background-color: #28A745; padding: 0px;">
+                    <div class="col-12 " style="background-color: #3C793B; padding: 0px;">
 
-                        <ul class="nav nav-pills mb-1 " id="myTaba" role="tablist">
+                        <ul class="nav nav-pills mb-1" >
                             <li class="nav-item">
                                 <a class="nav-link btn-success active pl-4 pr-4 text-white" id="pills-dieta-tab" data-toggle="pill" href="#pills-dieta"  aria-controls="pills-dieta" aria-selected="true">Dieta VIP</a>
                             </li>
@@ -122,7 +122,7 @@ window.location = "UserVIP.php"
                                 <a class="nav-link  btn-success  text-white" id="pills-usuario-tab" data-toggle="pill" href="#pills-usuario" role="tab" aria-controls="pills-usuario" aria-selected="false">Usuario</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link  btn-success  text-white" id="pills-tips" href="TipsVIP.html" role="tab" aria-controls="pills-tips" aria-selected="false">Tips y Consejos VIP</a>
+                                <a class="nav-link  btn-success  text-white"  href="TipsVIP.php">Tips y Consejos VIP</a>
                             </li>
                            
                         </ul>
